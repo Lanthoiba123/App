@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+
+    <item
+        android:id="@+id/home"
+        android:title="Home"
+        android:icon="@drawable/ic_baseline_home_24"/>
+    <item
+        android:id="@+id/message"
+        android:title="Message"
+        android:icon="@drawable/ic_baseline_message_24"/>
+    <item
+        android:id="@+id/sync"
+        android:title="Sync"
+        android:icon="@drawable/ic_baseline_sync_24"/>
+    <item
+        android:id="@+id/trash"
+        android:title="Trash"
+        android:icon="@drawable/ic_baseline_delete_24"/>
+    </group>
+
+    <item
+        android:title="Profile">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/logout"
+                    android:icon="@drawable/ic_baseline_login_24"
+                    android:title="LogOut"/>
+                <item
+                    android:id="@+id/account"
+                    android:title="Account"
+                    android:icon="@drawable/ic_baseline_person_add_24"/>
+                <item
+                    android:id="@+id/setting"
+                    app:showAsAction="always"
+                    android:icon="@drawable/ic_baseline_settings_24"
+                    android:title="Setting"/>
+            </group>
+        </menu>
+    </item>
+
+    <item
+        android:title="Communicate">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/help"
+                    android:icon="@drawable/ic_baseline_help_24"
+                    android:title="Help"/>
+                <item
+                    android:id="@+id/feedback"
+                    android:title="Feedback"
+                    android:icon="@drawable/ic_baseline_feedback_24"/>
+                <item
+                    android:id="@+id/rate"
+                    android:title="Rate Us"
+                    android:icon="@drawable/ic_baseline_rate_review_24"/>
+                <item
+                    android:id="@+id/share"
+                    app:showAsAction="always"
+                    android:icon="@drawable/ic_baseline_share_24"
+                    android:title="Share This App" />
+            </group>
+        </menu>
+    </item>
+
+
+</menu>

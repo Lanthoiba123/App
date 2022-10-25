@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/KJ"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:circularflow_defaultRadius="15dp"
+    tools:context=".MainActivity">
+    <TextView
+        android:id="@+id/login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="160dp"
+        android:layout_marginTop="84dp"
+        android:layout_marginBottom="57dp"
+        android:text="LOG IN"
+        android:textColor="#000000"
+        android:textSize="24sp"/>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/checkbox"
+        style="@style/ThemeOverlay.Material3.AutoCompleteTextView.OutlinedBox"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="27dp"
+        android:layout_marginTop="230dp"
+        app:helperText="Required"
+        app:helperTextTextColor="#FD0606"
+        app:counterEnabled="true"
+        app:counterMaxLength="10"
+            android:layout_centerHorizontal="true"
+        app:passwordToggleEnabled="true"
+        app:startIconDrawable="@drawable/ic_baseline_vpn_key_24">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/transparent"
+            android:hint="Enter password"
+            android:inputType="textPassword" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/Username"
+        style="@style/ThemeOverlay.Material3.AutoCompleteTextView.OutlinedBox"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="27dp"
+        android:layout_marginTop="150dp"
+        app:helperText="Required"
+        app:helperTextTextColor="#FD0606"
+        app:counterEnabled="true"
+        app:counterMaxLength="20"
+        android:layout_centerHorizontal="true"
+
+        app:passwordToggleEnabled="true"
+        app:startIconDrawable="@drawable/ic_baseline_person_24">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/transparent"
+            android:hint="Email"
+            android:inputType="textUri" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="90dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/checkbox"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30pt"
+        android:background="#11EDCC"
+        android:backgroundTint="#0CD5EF"
+        android:gravity="center"
+        android:text="LOG IN"
+        android:textColor="#F8F7F7"
+        app:cornerRadius="50dp" />
+
+    <Button
+        android:id="@+id/forgot"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:layout_below="@id/button"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:background="@android:color/transparent"
+        android:gravity="center"
+        android:text="Forgot Password?"
+        android:textAllCaps="false"
+        android:textColor="#0768B5"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/account"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:layout_below="@id/button"
+        android:layout_marginTop="70dp"
+
+        android:text="Don't have an account?"/>
+
+    <Button
+        android:id="@+id/signup"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/account"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="40dp"
+        android:background="@android:color/transparent"
+        android:backgroundTint="#FFFFFF"
+        android:text="Sign Up"
+        android:textAllCaps="false"
+        android:textColor="#03E2F6" />
+
+
+
+</RelativeLayout>

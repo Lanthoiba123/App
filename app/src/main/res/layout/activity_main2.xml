@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context=".MainActivity2">
+
+    <TextView
+        android:id="@+id/register"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="REGISTER"
+        android:gravity="center"
+        android:layout_marginTop="60dp"
+        android:textSize="24dp"
+        android:textStyle="bold"/>
+    <TextView
+        android:id="@+id/Username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/register"
+        android:layout_marginLeft="25dp"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        android:text="Username"/>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/user"
+        style="@style/ThemeOverlay.Material3.AutoCompleteTextView.OutlinedBox"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="27dp"
+        android:layout_marginTop="120dp"
+        app:counterEnabled="true"
+        app:counterMaxLength="20"
+        app:helperText="Required"
+        app:helperTextTextColor="#FD0606"
+        app:endIconMode="clear_text"
+        app:passwordToggleEnabled="true"
+        app:startIconDrawable="@drawable/ic_baseline_person_24">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/name"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/transparent"
+            android:hint="Write your name" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:id="@+id/contact"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/user"
+        android:layout_marginLeft="25dp"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        android:text="Contact"/>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/cont"
+        style="@style/ThemeOverlay.Material3.AutoCompleteTextView.OutlinedBox"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="27dp"
+        app:endIconMode="clear_text"
+        android:layout_marginTop="230dp"
+        app:helperText="Required"
+        app:helperTextTextColor="#FD0606"
+        app:counterEnabled="true"
+        app:counterMaxLength="10"
+
+        app:passwordToggleEnabled="true"
+        app:startIconDrawable="@drawable/phone">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/contact1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/transparent"
+            android:hint="Contact" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:id="@+id/email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/cont"
+        android:layout_marginLeft="25dp"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        android:text="E-Mail"/>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/mail"
+        style="@style/ThemeOverlay.Material3.AutoCompleteTextView.OutlinedBox"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="27dp"
+        android:layout_marginTop="330dp"
+        app:helperText="Required"
+        app:helperTextTextColor="#FD0606"
+        app:endIconMode="clear_text"
+        app:counterEnabled="true"
+        app:counterMaxLength="30"
+
+        app:passwordToggleEnabled="true"
+        app:startIconDrawable="@drawable/ic_baseline_email_24">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/email1"
+            android:background="@android:color/transparent"
+            android:hint="E-mail" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:id="@+id/password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/mail"
+        android:layout_marginLeft="25dp"
+        android:text="Password"
+        android:textSize="18dp"
+        android:textStyle="bold" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/enter"
+        style="@style/ThemeOverlay.Material3.AutoCompleteTextView.OutlinedBox"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="27dp"
+        android:layout_marginTop="435dp"
+        app:helperText="Required"
+        app:helperTextTextColor="#FD0606"
+        app:counterEnabled="true"
+        app:counterMaxLength="10"
+        app:passwordToggleEnabled="true"
+        app:startIconDrawable="@drawable/ic_baseline_lock_24">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/transparent"
+            android:hint="Enter password"
+            android:inputType="textPassword"
+            android:id="@+id/password1"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <TextView
+        android:id="@+id/confirmpassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/enter"
+        android:layout_marginLeft="25dp"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        android:text="Confirm Password"/>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/word"
+        style="@style/ThemeOverlay.Material3.AutoCompleteTextView.OutlinedBox"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="27dp"
+        android:layout_marginTop="540dp"
+        app:helperText="Required"
+        app:helperTextTextColor="#FD0606"
+        app:counterEnabled="true"
+        app:counterMaxLength="10"
+
+        app:passwordToggleEnabled="true"
+        app:startIconDrawable="@drawable/ic_baseline_vpn_key_24">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/transparent"
+            android:hint="Confirm your password"
+            android:inputType="textPassword"
+            android:id="@+id/password2"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <Button
+        android:id="@+id/Signin"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/word"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:gravity="center"
+        android:text="Sign In" />
+
+</RelativeLayout>
